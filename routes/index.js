@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 const getMovies = async (req,res) => {
 
   const title = req.query.title || ''
-  const page = req.query.page || 0
+  const page = req.query.page || 1
 
   const options = {
     url: `${API_URL}?s=${title}&apikey=${API_KEY}&page=${page}&type=movie`,
